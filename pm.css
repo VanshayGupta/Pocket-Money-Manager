@@ -1,0 +1,96 @@
+body{
+	background-color: rgb(245, 245, 245);
+	text-align: center;
+	font-family: Avenir;
+	font-weight: 400;
+}
+.heading{
+	font-weight: 600;
+	text-transform: uppercase;
+}
+.listItem{
+	margin: 5px auto;
+	width: 30%;
+}
+.fa-money-check{
+	color: #007BFF;
+}
+.fa-rupee-sign{
+	font-size: 25px;
+}
+.fa-arrow-down{
+	color: red;
+}
+.fa-arrow-up{
+	color: green;
+}
+.l1{
+	font-size: 20px;
+	font-weight: 600;
+}
+.l2{
+	color: gray;
+}
+#top{
+	margin-top: 20px;
+}
+#list{
+	list-style: none;
+	margin: 20px auto;
+	width: 35%;
+}
+#debitValid{
+	color: red;
+	display: none;
+}
+#creditValid{
+	color: red;
+	display: none;
+}
+#demo{
+	display: none;
+}
+#creditDisplay{
+	background-color: rgb(152, 230, 152);
+}
+#travelDisplay{
+	background-color: rgb(255, 255, 179);
+}
+#foodDisplay{
+	background-color: rgb(153, 204, 255);
+}
+#rentDisplay{
+	background-color: rgb(255, 153, 230);
+}
+#utilitiesDisplay{
+	background-color: rgb(217, 217, 217);
+}
+#borrowedDisplay{
+	background-color: rgb(255, 77, 77);
+}
+#lentDisplay{
+	background-color: rgb(255, 77, 77);
+}
+#miscDisplay{
+	background-color: rgb(255, 153, 187);
+}
+#debitForm{
+	display: none;
+}
+#debitShow{
+	font-weight: 800;
+	color: #007BFF;
+	background-color: rgb(245, 245, 245);
+	border: none;
+	outline: none;
+}
+#creditForm{
+	display: none;
+}
+#creditShow{
+	font-weight: 800;
+	color: #007BFF;
+	background-color: rgb(245, 245, 245);
+	border: none;
+	outline: none;
+}

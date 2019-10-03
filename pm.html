@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pocket Money Manager</title>
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="pm.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.0/css/all.min.css">
+</head>
+<body>
+	<h1 class="heading" id="top">Pocket Money Manager  <i class="fas fa-money-check"></i></h1> <br>
+	<h2 class="heading">Total- <i class="fas fa-rupee-sign"></i> <span id="total">0</span></h2> <br>
+	<h2 class="heading">Income- <i class="fas fa-rupee-sign"></i> <span id="incomeTotal">0</span></h2> <br>
+ 	<h2 class="heading">Expense- <i class="fas fa-rupee-sign"></i> <span id="expenseTotal">0</span></h2> <br>
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-6">
+				<h3 id="expense" class="heading"><i class="fas fa-arrow-down"></i>  Debit <button id="debitShow">+</button></h3>
+				<hr>
+				<form id="debitForm">
+					Cost <input type="number" id="cost" class="rounded" placeholder="Enter the cost" required> <br> <br>
+					Category <select id="category" class="rounded"> 
+						<option>Category</option>
+						<option>Food</option>
+						<option>Rent</option>
+						<option>Travel</option>
+						<option>Utilities</option>
+						<option>Borrowed</option>
+						<option>Lent</option>
+						<option>Misc</option>
+					</select> <br> <br>
+					Date <input type="date" id="debitDate" class="rounded" required> <br> <br>
+					Description <input type="text" id="debitDescription" class="rounded" placeholder="Write a description" required> <br> <br>
+					<p id="debitValid">Please enter the valid details!</p> 
+					<button id="submitDebit" class="btn btn-outline-primary my-2 my-sm-0" type="button">Submit</button> <br> <br>
+				</form>
+			</div>
+			<div class="col-lg-6">
+				<h3 id="income" class="heading"><i class="fas fa-arrow-up"></i>  Credit <button id="creditShow">+</button></h3>
+				<hr>
+				<form id="creditForm">
+					Amount <input type="number" id="received" class="rounded" placeholder="Enter the amount" required> <br> <br>
+					Date <input type="date" id="creditDate" class="rounded" required> <br> <br>
+					Description <input type="text" id="creditDescription" class="rounded" placeholder="Write a description" required> <br> <br>
+					<p id="creditValid">Please enter the valid details!</p> 
+					<button id="submitCredit" class="btn btn-outline-primary my-2 my-sm-0" type="button">Submit</button> <br> <br> 
+				</form>
+			</div>
+		</div>
+	</div>
+	<br> <br>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-6">
+				<h3 class="heading">List of Transactions</h3>
+				<hr>
+				<p id="hide">You transactions will show up here!</p>
+				<ul id="list" class="list-group">
+					<li class="listItem list-group-item rounded" id="demo"><span class="l1"></span><span class="l2"></span></li>
+				</ul>
+			</div>
+			<div class="col-lg-6">
+				<h3 class="heading">Transactions by Category</h3>
+				<hr>
+				<ul id="catList" class="list-group">
+					<li id="creditDisplay" class="list-group-item listItem rounded">Credit- 0</li>
+					<li id="travelDisplay" class="list-group-item listItem rounded">Travel- 0</li>
+					<li id="rentDisplay" class="list-group-item listItem rounded">Rent- 0</li>
+					<li id="foodDisplay" class="list-group-item listItem rounded">Food- 0</li>
+					<li id="utilitiesDisplay" class="list-group-item listItem rounded">Utilities- 0</li>
+					<li id="lentDisplay" class="list-group-item listItem rounded">Lent- 0</li>
+					<li id="borrowedDisplay" class="list-group-item listItem rounded">Borrowed- 0</li>
+					<li id="miscDisplay" class="list-group-item listItem rounded">Misc- 0</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<br> <br> <br> <br>
+
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="pm.js"></script>
+</body>
+</html>
